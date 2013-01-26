@@ -5317,7 +5317,7 @@ SkinnedMeshRenderer:
   - {fileID: 92923925}
   m_RootBone: {fileID: 1363312685}
   m_AABB:
-    m_Center: {x: -.000223278999, y: .892648697, z: .00509279966}
+    m_Center: {x: -.000223278999, y: .892648697, z: .00509280711}
     m_Extent: {x: .76097554, y: .95374918, z: .228061885}
   m_DirtyAABB: 0
 --- !u!1 &571535339
@@ -15747,7 +15747,7 @@ SkinnedMeshRenderer:
   m_RootBone: {fileID: 1363312685}
   m_AABB:
     m_Center: {x: .0317224413, y: 1.62608516, z: .0617820993}
-    m_Extent: {x: .0173746943, y: .0231889486, z: .0231823698}
+    m_Extent: {x: .0173746943, y: .0231889486, z: .0231823679}
   m_DirtyAABB: 0
 --- !u!1 &1702884756
 GameObject:
@@ -20433,6 +20433,14 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 3.12638802e-15
       objectReference: {fileID: 0}
+    - target: {fileID: 400094, guid: dbea10a035345473497fa7975cc9675b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400094, guid: dbea10a035345473497fa7975cc9675b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dbea10a035345473497fa7975cc9675b, type: 2}
   m_RootGameObject: {fileID: 1230756683}
@@ -20793,6 +20801,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4ff29a25079ebf141ace52bfaf4bc4a3, type: 3}
   m_Controller: {fileID: 9100000, guid: 042914e107241244896b36a14ff15f88, type: 2}
+  m_CullingMode: 1
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
 --- !u!114 &2129641345
@@ -20806,6 +20815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c026a26bfd98f3e4fa9c736a173aaa79, type: 3}
   m_Name: 
   DirectionDampTime: .25
+  ApplyGravity: 1
 --- !u!143 &2129641346
 CharacterController:
   m_ObjectHideFlags: 0
