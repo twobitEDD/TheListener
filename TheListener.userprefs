@@ -1,10 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Collectable.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="28" Column="58" />
-      <File FileName="Assets/Scripts/Collectable.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Collector.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="46" Column="21" />
+      <File FileName="Assets/Scripts/Collectable.cs" Line="47" Column="1" />
+      <File FileName="Assets/Scripts/Collector.cs" Line="130" Column="30" />
+      <File FileName="Assets/Scripts/ApplicationManager.cs" Line="20" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

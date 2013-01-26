@@ -11,12 +11,12 @@ public class Collectable : MonoBehaviour {
 		LockKey,
 	}
 
-	public bool requireAction = false;
+	public bool autoPickup = false;
 	public ItemType itemType = ItemType.Normal;
 	
 	void Start ()
 	{
-		// Done because we never want to run into this object, only pick it up.
+		// Done because we never want to collide with this object, only pick it up.
 		collider.isTrigger = true;
 	}
 	
@@ -25,6 +25,10 @@ public class Collectable : MonoBehaviour {
 		//TODO : show response to nearby collector
 	}
 	
+	public void StayCollectable ( )
+	{
+		transform.Rotate(Vector3.up,Time.deltaTime * 100);		
+	}
 	public void Collected ( )
 	{
 		collider.enabled = false;
@@ -34,12 +38,12 @@ public class Collectable : MonoBehaviour {
 	{
 		collider.enabled = true;
 		// This is so the collector doesn't pick them right back up
-		requireAction = true;
+		autoPickup = false;
 	}
 	
 	public void ExitCollectable ( )
 	{
-		//TODO : show response to nearby collector		
+		//TODO : show response to nearby collector
 	}
 
 }
