@@ -18959,6 +18959,10 @@ Prefab:
       propertyPath: m_TagString
       value: Player0
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 50bffac7938894bffa505665956be264, type: 2}
+      propertyPath: m_Name
+      value: Player0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50bffac7938894bffa505665956be264, type: 2}
   m_RootGameObject: {fileID: 1720707181}
@@ -20052,7 +20056,7 @@ GameObject:
   - 114: {fileID: 1493366795}
   - 82: {fileID: 1493366799}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player1
   m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22583,7 +22587,7 @@ GameObject:
   - 114: {fileID: 1720707183}
   - 82: {fileID: 1720707187}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player0
   m_TagString: Player0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23736,6 +23740,10 @@ Prefab:
       propertyPath: m_TagString
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 50bffac7938894bffa505665956be264, type: 2}
+      propertyPath: m_Name
+      value: Player1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50bffac7938894bffa505665956be264, type: 2}
   m_RootGameObject: {fileID: 1493366793}
@@ -24050,6 +24058,10 @@ Prefab:
     - target: {fileID: 100000, guid: 8f8d2ef94975d4ebb8995c2ebe18da88, type: 2}
       propertyPath: m_Name
       value: Camera0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8f8d2ef94975d4ebb8995c2ebe18da88, type: 2}
+      propertyPath: targetTag
+      value: Player0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8100000, guid: 8f8d2ef94975d4ebb8995c2ebe18da88, type: 2}
