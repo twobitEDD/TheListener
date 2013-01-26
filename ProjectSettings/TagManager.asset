@@ -4,6 +4,8 @@
 TagManager:
   tags:
   - CollectableHost
+  - Player0
+  - Player1
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

@@ -12,13 +12,22 @@ public class ApplicationManager : MonoBehaviour {
 		List<GameObject> collectableHostLocations = new List<GameObject>();
 		GameObject[] temp = GameObject.FindGameObjectsWithTag("CollectableHost");
 		collectableHostLocations.AddRange ( temp );
-		foreach ( Collectable collectableObj in collectableObjects ) 
+		bool ghostKeySet = false;
+		foreach ( Collectable collectableObj in collectableObjects )
 		{
 			int randIndex = Random.Range(0, collectableHostLocations.Count);
 			collectableObj.transform.parent = collectableHostLocations[randIndex].transform;
 			collectableObj.transform.position = Vector3.zero;
 			collectableObj.transform.localPosition = Vector3.zero;
+
 			collectableHostLocations.RemoveAt(randIndex);
+			
+			if (!ghostKeySet)
+			{
+				collectableObj.itemType = Collectable.ItemType.GhostKey;	
+				ghostKeySet = true;
+			}
+
 		}
 	}
 	

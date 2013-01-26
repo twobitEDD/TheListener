@@ -50,6 +50,10 @@ public class Collector : MonoBehaviour {
 		}
 		if ( false == collection.Contains ( other ) )
 		{
+			if ( other.itemType == Collectable.ItemType.GhostKey)
+			{
+				Debug.LogError("GAME OVER! Humans Win!");
+			}
 			collection.Add ( other );
 			other.Collected ();
 			if ( makeAttachPointParent )
@@ -119,6 +123,14 @@ public class Collector : MonoBehaviour {
 			if ( pickupRequested || collectObj.autoPickup )
 			{
 				Collect ( collectObj );
+			}
+		}
+		else
+		{
+			GhostController ghost = other.GetComponent<GhostController>();
+			if ( ghost )
+			{
+				Debug.LogError("GAME OVER! Ghosts Win! ");
 			}
 		}
 	}

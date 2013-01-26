@@ -2,8 +2,13 @@ using UnityEngine;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-
-
+	
+	public enum playerControlIndex
+	{
+		Player1 = 0,
+		Player2
+	}
+	public playerControlIndex playerIndex = playerControlIndex.Player1;
 	protected Animator animator;
 	public float DirectionDampTime = .25f;
 	public bool ApplyGravity = true; 
@@ -33,28 +38,28 @@ public class PlayerController : MonoBehaviour {
 		if (animator)
 		{
 			AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);			
-			if (stateInfo.IsName("Arms Layer.Wave") && animator.GetBool("Hi"))
+			if ( animator.GetBool("Hi"))
 			{
 				animator.SetBool("Hi", false);
 			}
 			// If we're not running, pick up the object
 			if (!stateInfo.IsName("Arms Layer.Wave") && !stateInfo.IsName("Base Layer.Run") )
 			{
-				if (Input.GetButton("Fire1"))
+				if (Input.GetButton("A" + ((int)playerIndex).ToString()))
 				{
 					animator.SetBool("Hi", true);
 					ourCollector.RequestPickup();
             	}
 			}
 
-			if(Input.GetButtonDown("Fire2") && animator.layerCount >= 2)
+			if(Input.GetButtonDown("B" + ((int)playerIndex).ToString() ) )
 			{
 				ourCollector.ReleaseAll();
 			}
 			
 		
-      		float h = Input.GetAxis("Horizontal");
-        	float v = Input.GetAxis("Vertical");
+      		float h = Input.GetAxis("Horizontal" + ((int)playerIndex).ToString() );
+        	float v = Input.GetAxis("Vertical" + ((int)playerIndex).ToString() );
 			
 			animator.SetFloat("Speed", v);
             animator.SetFloat("Direction", h, DirectionDampTime, Time.deltaTime);	

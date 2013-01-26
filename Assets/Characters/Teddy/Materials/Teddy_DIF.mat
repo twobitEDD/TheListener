@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Teddy_DIF
-  m_Shader: {fileID: 4, guid: 0000000000000000e000000000000000, type: 0}
+  m_Shader: {fileID: 203, guid: 0000000000000000e000000000000000, type: 0}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -25,6 +25,13 @@ Material:
           m_Texture: {fileID: 2800000, guid: 2e0a0a413e874f14393a2e8a2ea459ad, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _GlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -34,6 +41,14 @@ Material:
         first:
           name: _RMS
         second: .239567176
+      data:
+        first:
+          name: _InvFade
+        second: 2.24134326
+      data:
+        first:
+          name: _SquashAmount
+        second: 1
     m_Colors:
       data:
         first:
@@ -43,3 +58,11 @@ Material:
         first:
           name: _SpecColor
         second: {r: .777685046, g: .776119411, b: 1, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 1, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _Scale
+        second: {r: 1, g: 1, b: 1, a: 1}
