@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class EntryPoint : MonoBehaviour {
 	
+	
 	// Use this for initialization
 	void Start () 
 	{
@@ -37,6 +38,9 @@ public class EntryPoint : MonoBehaviour {
        	{
 			GameObject menuObject = (GameObject)MonoBehaviour.Instantiate(load);
 			menuObject.SetActive(true);
+			
+			Transform gameplayLoading = menuObject.transform.FindChild("Loading");
+			gameplayLoading.gameObject.SetActive(true);
 		}
 		
 	}

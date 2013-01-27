@@ -14,7 +14,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,8 +416,6 @@ MonoBehaviour:
   twoPlayersButton: {fileID: 13100010}
   threePlayersButton: {fileID: 13100006}
   quitButton: {fileID: 13100020}
-  ghostWinScreen: {fileID: 0}
-  humanWinScreen: {fileID: 0}
   twoPlayerMouseover: {fileID: 13100000}
   threePlayerMouseover: {fileID: 13100002}
   loadingScreen: {fileID: 13100024}
@@ -652,7 +650,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100026}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 00a4a15c5912b7040925590469781e78, type: 3}
+  m_Texture: {fileID: 2800000, guid: 732f8306e1fc72f4ca981f75d9bb5e3f, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2

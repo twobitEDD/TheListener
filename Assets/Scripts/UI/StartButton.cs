@@ -31,14 +31,14 @@ public class StartButton : MonoBehaviour {
 	void OnMouseUp () {
     	print ("Start button clicked.");
 		
-		if (AppManager.Instance.playerCount == 2)
-		{
-			loadingScreen.guiTexture.texture = twoPlayerInstructions;
-		}
-		else
-		{
+		//if (AppManager.Instance.playerCount == 2)
+		//{
+		//	loadingScreen.guiTexture.texture = twoPlayerInstructions;
+		//}
+		//else
+		//{
 			loadingScreen.guiTexture.texture = threePlayerInstructions;
-		}
+		//}
 		
 		welcomeScreen.enabled = false;
 		welcomeScreenBottom.enabled = false;
@@ -54,6 +54,6 @@ public class StartButton : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 }
