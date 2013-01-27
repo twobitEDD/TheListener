@@ -1,0 +1,40 @@
+Merge branch 'master' of https://github.com/twobitEDD/TheListener
+
+Conflicts:
+	Assets/Furniture/Materials.meta
+	Assets/GhostLevel.meta
+	Assets/Scripts/UI.meta
+	Assets/TheListener/Books/example_scene (2).unity.meta
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 4 different commits each, respectively.
+#
+# All conflicts fixed but you are still merging.
+#   (use "git commit" to conclude merge)
+#
+# Changes to be committed:
+#
+#	renamed:    Assets/Testprefab.unity.meta -> Assets/GhostLevel.meta
+#	new file:   Assets/GhostLevel/Bauble.mat
+#	new file:   Assets/GhostLevel/Bauble.mat.meta
+#	new file:   Assets/GhostLevel/GhostLevelTest.unity
+#	renamed:    Assets/TestPrefabNewRoom.unity.meta -> Assets/GhostLevel/GhostLevelTest.unity.meta
+#	renamed:    Assets/TestPrefabNewRoom.unity -> Assets/MainScene.unity
+#	new file:   Assets/MainScene.unity.meta
+#	modified:   Assets/Materials/chairMat.mat
+#	new file:   Assets/Prefabs/Bauble.prefab
+#	new file:   Assets/Prefabs/Bauble.prefab.meta
+#	new file:   Assets/Scripts/GhostBaubler.cs
+#	new file:   Assets/Scripts/GhostBaubler.cs.meta
+#	deleted:    Assets/Testprefab.unity
+#
+
