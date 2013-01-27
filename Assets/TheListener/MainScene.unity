@@ -1831,8 +1831,8 @@ GameObject:
   - 135: {fileID: 79130872}
   - 114: {fileID: 79130871}
   m_Layer: 0
-  m_Name: Runic Axe
-  m_TagString: Untagged
+  m_Name: Axe
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3514,6 +3514,14 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .317936897
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 636cd0f2a00f6674eacba81ce53aabc0, type: 3}
+      propertyPath: m_Name
+      value: Ammo Crate
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 636cd0f2a00f6674eacba81ce53aabc0, type: 3}
+      propertyPath: m_TagString
+      value: Collectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 636cd0f2a00f6674eacba81ce53aabc0, type: 3}
   m_RootGameObject: {fileID: 2111919506}
@@ -3531,8 +3539,8 @@ GameObject:
   - 135: {fileID: 143306115}
   - 114: {fileID: 143306114}
   m_Layer: 0
-  m_Name: monitor
-  m_TagString: Untagged
+  m_Name: Computer
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3941,8 +3949,8 @@ GameObject:
   - 135: {fileID: 153098331}
   - 114: {fileID: 153098330}
   m_Layer: 0
-  m_Name: book_0001d4
-  m_TagString: Untagged
+  m_Name: Book
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6082,6 +6090,32 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 237897458}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &239046355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 239046356}
+  m_Layer: 0
+  m_Name: CollectablePosition
+  m_TagString: CollectableHost
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &239046356
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 239046355}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.04513168, y: -.805524886, z: -22.4125271}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 695422953}
 --- !u!1 &241063113
 GameObject:
   m_ObjectHideFlags: 0
@@ -7934,8 +7968,8 @@ GameObject:
   - 135: {fileID: 327779491}
   - 114: {fileID: 327779490}
   m_Layer: 0
-  m_Name: piano
-  m_TagString: Untagged
+  m_Name: Music Box
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13535,6 +13569,14 @@ Prefab:
       propertyPath: m_Radius
       value: .25
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 779398ef60ddd4b8d9190eae2c87023f, type: 2}
+      propertyPath: m_Name
+      value: Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 779398ef60ddd4b8d9190eae2c87023f, type: 2}
+      propertyPath: m_TagString
+      value: Collectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 779398ef60ddd4b8d9190eae2c87023f, type: 2}
   m_RootGameObject: {fileID: 153098329}
@@ -13609,6 +13651,32 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 517956836}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &518305479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 518305480}
+  m_Layer: 0
+  m_Name: CollectablePosition
+  m_TagString: CollectableHost
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &518305480
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 518305479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .32247448, y: -1.66762483, z: -7.22508907}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 695422953}
 --- !u!1 &519502382
 GameObject:
   m_ObjectHideFlags: 0
@@ -13688,7 +13756,7 @@ GameObject:
   - 4: {fileID: 520777141}
   m_Layer: 0
   m_Name: CollectablePosition
-  m_TagString: Untagged
+  m_TagString: CollectableHost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14979,7 +15047,7 @@ GameObject:
   - 4: {fileID: 576318300}
   m_Layer: 0
   m_Name: CollectablePosition
-  m_TagString: Untagged
+  m_TagString: CollectableHost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15468,7 +15536,7 @@ GameObject:
   - 4: {fileID: 619238711}
   m_Layer: 0
   m_Name: CollectablePosition
-  m_TagString: Untagged
+  m_TagString: CollectableHost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16519,6 +16587,32 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 674908867}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &676295058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 676295059}
+  m_Layer: 0
+  m_Name: CollectablePosition
+  m_TagString: CollectableHost
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &676295059
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 676295058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.29049015, y: -1.66762483, z: -12.8688278}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 695422953}
 --- !u!1 &680878516
 GameObject:
   m_ObjectHideFlags: 0
@@ -17024,6 +17118,7 @@ Transform:
   m_LocalPosition: {x: -10.2222977, y: 1.73583186, z: 18.6942253}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2111919507}
   - {fileID: 153098334}
   - {fileID: 1803469371}
   - {fileID: 1234876025}
@@ -17035,16 +17130,21 @@ Transform:
   - {fileID: 1278945652}
   - {fileID: 520777141}
   - {fileID: 1207338248}
-  - {fileID: 2111919507}
-  - {fileID: 2011553630}
-  - {fileID: 740235235}
+  - {fileID: 518305480}
+  - {fileID: 239046356}
+  - {fileID: 889181912}
+  - {fileID: 676295059}
+  - {fileID: 1517565210}
+  - {fileID: 1017206676}
   - {fileID: 143306112}
   - {fileID: 1959871925}
-  - {fileID: 1175631047}
-  - {fileID: 327779486}
+  - {fileID: 2011553630}
+  - {fileID: 740235235}
   - {fileID: 79130869}
-  - {fileID: 881791128}
+  - {fileID: 327779486}
+  - {fileID: 1175631047}
   - {fileID: 1335898896}
+  - {fileID: 881791128}
   m_Father: {fileID: 0}
 --- !u!64 &695422954
 MeshCollider:
@@ -18071,8 +18171,8 @@ GameObject:
   - 135: {fileID: 740235237}
   - 114: {fileID: 740235236}
   m_Layer: 0
-  m_Name: microphone
-  m_TagString: Untagged
+  m_Name: Microphone
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20090,6 +20190,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: -.713376343
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cad7601757be8794b96e854a56f057e4, type: 3}
+      propertyPath: m_Name
+      value: White Board
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cad7601757be8794b96e854a56f057e4, type: 3}
+      propertyPath: m_TagString
+      value: Collectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cad7601757be8794b96e854a56f057e4, type: 3}
   m_RootGameObject: {fileID: 881791127}
@@ -21614,8 +21722,8 @@ GameObject:
   - 135: {fileID: 881791133}
   - 114: {fileID: 881791132}
   m_Layer: 0
-  m_Name: Teachers_Board
-  m_TagString: Untagged
+  m_Name: White Board
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21871,6 +21979,32 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 0}
+--- !u!1 &889181911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 889181912}
+  m_Layer: 0
+  m_Name: CollectablePosition
+  m_TagString: CollectableHost
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &889181912
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889181911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.2874966, y: -1.19745493, z: -1.95435524}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 695422953}
 --- !u!1 &889661486
 GameObject:
   m_ObjectHideFlags: 0
@@ -23438,7 +23572,7 @@ GameObject:
   - 4: {fileID: 947974423}
   m_Layer: 0
   m_Name: CollectablePosition
-  m_TagString: Untagged
+  m_TagString: CollectableHost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25265,6 +25399,32 @@ MeshFilter:
   m_PrefabInternal: {fileID: 88121321}
   m_GameObject: {fileID: 1015717716}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1017206675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1017206676}
+  m_Layer: 0
+  m_Name: CollectablePosition
+  m_TagString: CollectableHost
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1017206676
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1017206675}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.7947712, y: -.811046839, z: -20.9847126}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 695422953}
 --- !u!1 &1021391593
 GameObject:
   m_ObjectHideFlags: 0
@@ -28533,8 +28693,8 @@ GameObject:
   - 135: {fileID: 1175631050}
   - 114: {fileID: 1175631049}
   m_Layer: 0
-  m_Name: Oilcan2
-  m_TagString: Untagged
+  m_Name: Tank
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28806,7 +28966,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b1b3371971109e541867d446670985b5, type: 3}
       propertyPath: m_Name
-      value: microphone
+      value: Microphone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b1b3371971109e541867d446670985b5, type: 3}
+      propertyPath: m_TagString
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1b3371971109e541867d446670985b5, type: 3}
@@ -29430,7 +29594,7 @@ GameObject:
   - 4: {fileID: 1207338248}
   m_Layer: 0
   m_Name: CollectablePosition
-  m_TagString: Untagged
+  m_TagString: CollectableHost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29442,7 +29606,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1207338247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0516233444, y: -1.66762483, z: -10.2250891}
+  m_LocalPosition: {x: .32247448, y: -1.66762483, z: -10.2250891}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 695422953}
@@ -30277,7 +30441,7 @@ GameObject:
   - 4: {fileID: 1234876025}
   m_Layer: 0
   m_Name: CollectablePosition
-  m_TagString: Untagged
+  m_TagString: CollectableHost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30532,6 +30696,14 @@ Prefab:
     - target: {fileID: 400000, guid: e6abbdc1d627fb54180f463e3b5ab0fb, type: 3}
       propertyPath: m_LocalScale.z
       value: .174467549
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e6abbdc1d627fb54180f463e3b5ab0fb, type: 3}
+      propertyPath: m_Name
+      value: Tank
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e6abbdc1d627fb54180f463e3b5ab0fb, type: 3}
+      propertyPath: m_TagString
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6abbdc1d627fb54180f463e3b5ab0fb, type: 3}
@@ -31384,7 +31556,7 @@ GameObject:
   - 4: {fileID: 1278945652}
   m_Layer: 0
   m_Name: CollectablePosition
-  m_TagString: Untagged
+  m_TagString: CollectableHost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31782,6 +31954,14 @@ Prefab:
     - target: {fileID: 400000, guid: 4a99f15caadf6274586d770fb4cde3bc, type: 2}
       propertyPath: m_LocalScale.z
       value: .158127084
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4a99f15caadf6274586d770fb4cde3bc, type: 2}
+      propertyPath: m_Name
+      value: Jar
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4a99f15caadf6274586d770fb4cde3bc, type: 2}
+      propertyPath: m_TagString
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a99f15caadf6274586d770fb4cde3bc, type: 2}
@@ -32771,8 +32951,8 @@ GameObject:
   - 135: {fileID: 1335898899}
   - 114: {fileID: 1335898898}
   m_Layer: 0
-  m_Name: TeddyBear
-  m_TagString: Untagged
+  m_Name: Teddy Bear
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33229,6 +33409,14 @@ Prefab:
     - target: {fileID: 2300000, guid: 83101ae77b1ba844cb16ce875bee6270, type: 3}
       propertyPath: m_LightmapTilingOffset.w
       value: .365234375
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 83101ae77b1ba844cb16ce875bee6270, type: 3}
+      propertyPath: m_Name
+      value: Computer
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 83101ae77b1ba844cb16ce875bee6270, type: 3}
+      propertyPath: m_TagString
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83101ae77b1ba844cb16ce875bee6270, type: 3}
@@ -37258,7 +37446,7 @@ GameObject:
   - 4: {fileID: 1502623048}
   m_Layer: 0
   m_Name: CollectablePosition
-  m_TagString: Untagged
+  m_TagString: CollectableHost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37271,6 +37459,32 @@ Transform:
   m_GameObject: {fileID: 1502623047}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.99049, y: -1.66762483, z: -10.2688274}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 695422953}
+--- !u!1 &1517565209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1517565210}
+  m_Layer: 0
+  m_Name: CollectablePosition
+  m_TagString: CollectableHost
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1517565210
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1517565209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.1947708, y: -.811046839, z: -23.584713}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 695422953}
@@ -37963,7 +38177,7 @@ GameObject:
   - 4: {fileID: 1543412754}
   m_Layer: 0
   m_Name: CollectablePosition
-  m_TagString: Untagged
+  m_TagString: CollectableHost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42261,6 +42475,14 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .274978191
       objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 8c20c380af461574f99424a22acd34c1, type: 3}
+      propertyPath: m_Name
+      value: Teddy Bear
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 8c20c380af461574f99424a22acd34c1, type: 3}
+      propertyPath: m_TagString
+      value: Collectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c20c380af461574f99424a22acd34c1, type: 3}
   m_RootGameObject: {fileID: 1335898895}
@@ -44558,7 +44780,7 @@ GameObject:
   - 4: {fileID: 1803469371}
   m_Layer: 0
   m_Name: CollectablePosition
-  m_TagString: Untagged
+  m_TagString: CollectableHost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45888,6 +46110,14 @@ Prefab:
     - target: {fileID: 400000, guid: 0f2294f57240a9d4dab7779b7d86ec43, type: 3}
       propertyPath: m_LocalRotation.w
       value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f2294f57240a9d4dab7779b7d86ec43, type: 3}
+      propertyPath: m_Name
+      value: Knife
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f2294f57240a9d4dab7779b7d86ec43, type: 3}
+      propertyPath: m_TagString
+      value: Collectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f2294f57240a9d4dab7779b7d86ec43, type: 3}
@@ -48155,8 +48385,8 @@ GameObject:
   - 135: {fileID: 1959871928}
   - 114: {fileID: 1959871927}
   m_Layer: 0
-  m_Name: OilCan1
-  m_TagString: Untagged
+  m_Name: Jar
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -48755,6 +48985,14 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .135104567
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 571f3cc6cf641c8498e3eae32bc2ee83, type: 3}
+      propertyPath: m_TagString
+      value: Collectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 571f3cc6cf641c8498e3eae32bc2ee83, type: 3}
+      propertyPath: m_Name
+      value: Music Box
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 571f3cc6cf641c8498e3eae32bc2ee83, type: 3}
   m_RootGameObject: {fileID: 327779485}
@@ -49178,8 +49416,8 @@ GameObject:
   - 135: {fileID: 2011553635}
   - 114: {fileID: 2011553634}
   m_Layer: 0
-  m_Name: knife1
-  m_TagString: Untagged
+  m_Name: Knife
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51707,8 +51945,8 @@ GameObject:
   - 135: {fileID: 2111919512}
   - 114: {fileID: 2111919511}
   m_Layer: 0
-  m_Name: HP_FBX
-  m_TagString: Untagged
+  m_Name: Ammo Crate
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
