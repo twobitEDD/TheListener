@@ -22,6 +22,9 @@ public class TwoPlayersButton : MonoBehaviour {
     	print ("2 player button clicked.");
 		guiTextureToChange.texture = newGUITexture;
 		AppManager.Instance.playerCount = 2;
+		audio.pitch = 0.8f;
+		audio.Play();
+
 	}
 	
 	// Update is called once per frame

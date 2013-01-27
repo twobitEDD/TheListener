@@ -48,7 +48,9 @@ public class StartButton : MonoBehaviour {
 		threePlayersButton.enabled = false;
 		twoPlayerMouseover.enabled = false;
 		threePlayerMouseover.enabled = false;
-		
+		audio.pitch = 1.0f;
+		audio.Play();
+
 		Application.LoadLevel (Application.loadedLevel + 1);
 	}
 	

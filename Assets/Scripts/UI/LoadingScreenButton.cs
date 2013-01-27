@@ -10,6 +10,7 @@ public class LoadingScreenButton : MonoBehaviour {
 	
 	
 	void OnMouseUp () {
+		AppManager.Instance.BeginGame();
 		//AppManager.Instance.DisplayMessage("3 player button clicked.");
     	print ("Loading screen button clicked.");
 		gameObject.SetActive(false);

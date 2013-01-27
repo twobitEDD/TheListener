@@ -6,10 +6,18 @@ public class AppManager : MonoBehaviour {
 	
 	public GUITexture welcomeScreenTexture;
 	
+	public GameObject ghostWinScreen;	
+	public GameObject humanWinScreen;
+	
+	public bool activeGame = false;
+	
+	// TODO: Make a copy of the item which the humans are looking for to display on screen
+	//public GameObject winningObjectCopy;
+	
 	private static AppManager instance;
 	
 	public int playerCount = 2;
- 
+	
 	public static AppManager Instance
 	{
 		get
@@ -50,6 +58,12 @@ public class AppManager : MonoBehaviour {
 		DontDestroyOnLoad(this);
 	}
 	
+	public void BeginGame ()
+	{
+		LoadCollectables();
+		activeGame = true;
+	}
+	
 	void LoadCollectables()
 	{
 		List<GameObject> collectableHostLocations = new List<GameObject>();
@@ -72,11 +86,49 @@ public class AppManager : MonoBehaviour {
 			
 			if (!ghostKeySet)
 			{
-				collectableObj.GetComponent<Collectable>().itemType = Collectable.ItemType.GhostKey;	
+				Collectable winObject = collectableObj.GetComponent<Collectable>();
+				
+				winObject.itemType = Collectable.ItemType.GhostKey;
+
+				// TODO: Make a copy of the item which the humans are looking for to display on screen
+
 				ghostKeySet = true;
 			}
 
 		}
+	}
+
+	public void BeginGameOver ()
+	{
+		Invoke ( "RollCredits0", 10.0f );
+	}
+	public void RollCredits0 ()
+	{
+		ghostWinScreen.SetActive(false);	
+		humanWinScreen.SetActive(false);
+		
+		DisplayMessage("Game Developers for Phantom Listener: ");
+		Invoke ( "RollCredits1", 5.0f );
+	}
+	public void RollCredits1 ()
+	{
+		DisplayMessage("Matthew Z Haralovich(Zon): Tallest Person ");
+		Invoke ( "RollCredits2", 5.0f );
+	}
+	public void RollCredits2 ()
+	{
+		DisplayMessage("Nick Johns(...): Preferences Not Found ");
+		Invoke ( "RollCredits3", 5.0f );
+	}
+	public void RollCredits3 ()
+	{
+		DisplayMessage("Edd Norris(EDDnorris): #CoffeeChug ");
+		Invoke ( "RollCredits4", 5.0f );
+	}
+	public void RollCredits4 ()
+	{
+		DisplayMessage("Gabe Recchia(Rudebrazen): !Greg ");
+		Invoke ( "RollCredits0", 5.0f );
 	}
 	
 	void OnGUI() {

@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/UI/ThreePlayersButton.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/UI/TwoPlayersButton.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/UI/StartButton.cs" Line="28" Column="40" />
+      <File FileName="Assets/Scripts/GhostController.cs" Line="38" Column="1" />
+      <File FileName="Assets/Scripts/GhostBaubler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AppManager.cs" Line="64" Column="13" />
+      <File FileName="Assets/Scripts/EntryPoint.cs" Line="67" Column="16" />
+      <File FileName="Assets/Scripts/NetworkManager.cs" Line="5" Column="1" />
+      <File FileName="Assets/Scripts/Collector.cs" Line="143" Column="1" />
+      <File FileName="Assets/Scripts/UI/GameOverScreen.cs" Line="13" Column="41" />
+      <File FileName="Assets/Scripts/ThirdPersonCamera.cs" Line="19" Column="45" />
+      <File FileName="Assets/Scripts/UI/TextFade.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UI/LoadingScreenButton.cs" Line="13" Column="32" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="38" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

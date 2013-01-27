@@ -58,10 +58,9 @@ public class Collector : MonoBehaviour {
 		if ( false == collection.Contains ( other ) )
 		{
 			if ( other.itemType == Collectable.ItemType.GhostKey)
-			{
-				
-				Debug.LogError("GAME OVER! Humans Win!");
-				//humanWinScreen.enabled = true;
+			{				
+				AppManager.Instance.humanWinScreen.SetActive(true);
+				AppManager.Instance.BeginGameOver();
 			}
 			collection.Add ( other );
 			other.Collected ();
@@ -139,8 +138,8 @@ public class Collector : MonoBehaviour {
 			GhostController ghost = other.GetComponent<GhostController>();
 			if ( ghost )
 			{
-				Debug.LogError("GAME OVER! Ghosts Win! ");
-				//ghostWinScreen.enabled = true;
+				AppManager.Instance.ghostWinScreen.SetActive(true);
+				AppManager.Instance.BeginGameOver();
 			}
 		}
 	}

@@ -35,6 +35,11 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		if ( !AppManager.Instance.activeGame )
+		{
+			return;
+		}
+
 		if (animator)
 		{
 			AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);			

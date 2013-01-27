@@ -23,7 +23,8 @@ public class ThreePlayersButton : MonoBehaviour {
     	print ("3 player button clicked.");
 		guiTextureToChange.texture = newGUITexture;
 		AppManager.Instance.playerCount = 3;
-		
+		audio.pitch = 0.7f;
+		audio.Play();
 	}
 	
 	// Update is called once per frame
