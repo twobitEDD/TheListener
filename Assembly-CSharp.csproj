@@ -44,13 +44,23 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AppManager.cs" />
      <Compile Include="Assets\Scripts\ApplicationManager.cs" />
      <Compile Include="Assets\Scripts\Collectable.cs" />
      <Compile Include="Assets\Scripts\Collector.cs" />
+     <Compile Include="Assets\Scripts\EntryPoint.cs" />
+     <Compile Include="Assets\Scripts\GhostBaubler.cs" />
      <Compile Include="Assets\Scripts\GhostController.cs" />
      <Compile Include="Assets\Scripts\NetworkManager.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
+     <Compile Include="Assets\Scripts\UI\GameOverScreen.cs" />
+     <Compile Include="Assets\Scripts\UI\QuitButton1.cs" />
+     <Compile Include="Assets\Scripts\UI\StartButton.cs" />
+     <Compile Include="Assets\Scripts\UI\ThreePlayersButton.cs" />
+     <Compile Include="Assets\Scripts\UI\TwoPlayersButton.cs" />
+     <Compile Include="Assets\Scripts\UI\WelcomeScreen.cs" />
+     <Compile Include="Assets\Scripts\UI\WelcomeScreenBottom.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

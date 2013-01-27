@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ThirdPersonCamera.cs">
@@ -14,4 +15,17 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+=======
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GhostController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GhostController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+>>>>>>> 1c0f6bf8fe3fe38db253652a66eba37795a4e456
 </Properties>

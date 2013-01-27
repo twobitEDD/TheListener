@@ -22,8 +22,17 @@ public class Collector : MonoBehaviour {
 	public float pickupRequestWindow = 1.0f;
 	float pickupRequestTime;
 	
+	public GUITexture ghostWinScreen;
+	public GUITexture humanWinScreen;
+	
 	// Shows if the collected is interested in this object.
 	public bool pickupRequested;
+	
+	void Start()
+	{
+		ghostWinScreen = GameObject.Find("GhostWinScreen").guiTexture;
+		humanWinScreen = GameObject.Find("HumanWinScreen").guiTexture;
+	}
 	
 	public void RequestPickup ( )
 	{
@@ -52,7 +61,9 @@ public class Collector : MonoBehaviour {
 		{
 			if ( other.itemType == Collectable.ItemType.GhostKey)
 			{
+				
 				Debug.LogError("GAME OVER! Humans Win!");
+				humanWinScreen.enabled = true;
 			}
 			collection.Add ( other );
 			other.Collected ();
@@ -131,6 +142,7 @@ public class Collector : MonoBehaviour {
 			if ( ghost )
 			{
 				Debug.LogError("GAME OVER! Ghosts Win! ");
+				ghostWinScreen.enabled = true;
 			}
 		}
 	}
