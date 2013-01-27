@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 		Player1 = 0,
 		Player2
 	}
+	public bool dead = false;
 	public playerControlIndex playerIndex = playerControlIndex.Player1;
 	protected Animator animator;
 	public float DirectionDampTime = .25f;
@@ -46,6 +47,11 @@ public class PlayerController : MonoBehaviour {
 				animator.SetBool("Die", true );				
 			}
 			
+			return;
+		}
+		else if ( dead )
+		{
+			animator.SetBool("Die", true );
 			return;
 		}
 

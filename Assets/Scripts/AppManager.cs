@@ -18,6 +18,7 @@ public class AppManager : MonoBehaviour {
 	private static AppManager instance;
 	
 	public int playerCount = 2;
+	public int deathCount = 0;
 	
 	public static AppManager Instance
 	{
@@ -110,6 +111,7 @@ public class AppManager : MonoBehaviour {
 	}
 	public void RollCredits0 ()
 	{
+		
 		ghostWinScreen.SetActive(false);	
 		humanWinScreen.SetActive(false);
 		

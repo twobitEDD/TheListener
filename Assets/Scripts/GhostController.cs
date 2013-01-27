@@ -7,7 +7,7 @@ public class GhostController : MonoBehaviour {
 	public float DirectionDampTime = .25f;
 	public bool ApplyGravity = true; 
 	
-	public float isVisibleWindow = 1.0f;
+	public float isVisibleWindow = 2.0f;
 	float lastVisibleTimer;
 	//public Collector ourCollector;
 	public GameObject ourGameObject;
@@ -23,7 +23,9 @@ public class GhostController : MonoBehaviour {
 			ourGameObject = gameObject;
 		}
 		animator = ourGameObject.GetComponent<Animator>();
-				
+		
+		lastVisibleTimer = Time.realtimeSinceStartup;
+		
 		if(animator.layerCount >= 2)
 			animator.SetLayerWeight(1, 1);
 	}
@@ -46,7 +48,7 @@ public class GhostController : MonoBehaviour {
 			animator.SetFloat("Speed", v);
             animator.SetFloat("Direction", h, DirectionDampTime, Time.deltaTime);	
 			
-			if( Input.GetButtonDown("A-1" ) )
+			if( Input.GetButtonDown("A-1" ) && Time.realtimeSinceStartup - lastVisibleTimer > isVisibleWindow )
 			{
 				audio.Play();
 				// This is so the ghost can intentionally prolong their visibility
@@ -63,8 +65,8 @@ public class GhostController : MonoBehaviour {
 	
 	void ResetLayerIndex ()
 	{
-		// Check to see if another ResetLayerIndex came in after this one's Invoke was popped.
-		if ( Time.realtimeSinceStartup - lastVisibleTimer > isVisibleWindow ) 
+	//NOT TRUE!	// Check to see if another ResetLayerIndex came in after this one's Invoke was popped.
+//		if ( Time.realtimeSinceStartup - lastVisibleTimer > isVisibleWindow ) 
 		{
 			if ( gameObject.layer == renderLayerMiniMap )
 			{

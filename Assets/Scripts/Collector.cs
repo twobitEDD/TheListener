@@ -57,12 +57,8 @@ public class Collector : MonoBehaviour {
 		}
 		if ( false == collection.Contains ( other ) )
 		{
-			string otherName = other.name;
-			if (otherName == "Axe" || otherName == "Knife" || otherName == "Book" || otherName == "Jar" 
-				|| otherName == "Music Box" || otherName == "Radio") 
-			{
-				other.audio.Play ();	
-			}
+			
+			other.audio.Play ();	
 			if ( other.itemType == Collectable.ItemType.GhostKey)
 			{
 				AppManager.Instance.humanWinScreen.SetActive(true);
@@ -144,9 +140,17 @@ public class Collector : MonoBehaviour {
 			GhostController ghost = other.GetComponent<GhostController>();
 			if ( ghost )
 			{
-				
-				AppManager.Instance.ghostWinScreen.SetActive(true);
-				AppManager.Instance.BeginGameOver();
+				if ( AppManager.Instance.playerCount == 2 || AppManager.Instance.deathCount > 0 ) 
+				{
+					AppManager.Instance.ghostWinScreen.SetActive(true);
+					gameObject.GetComponent<PlayerController>().dead = true;
+					AppManager.Instance.BeginGameOver();
+				}
+				else
+				{
+					gameObject.GetComponent<PlayerController>().dead = true;
+					++AppManager.Instance.deathCount;
+				}
 			}
 		}
 	}
