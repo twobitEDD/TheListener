@@ -57,6 +57,12 @@ public class Collector : MonoBehaviour {
 		}
 		if ( false == collection.Contains ( other ) )
 		{
+			string otherName = other.name;
+			if (otherName == "Axe" || otherName == "Knife" || otherName == "Book" || otherName == "Jar" 
+				|| otherName == "Music Box" || otherName == "Radio") 
+			{
+				other.audio.Play ();	
+			}
 			if ( other.itemType == Collectable.ItemType.GhostKey)
 			{				
 				AppManager.Instance.humanWinScreen.SetActive(true);
