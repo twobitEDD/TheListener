@@ -44,12 +44,15 @@ public class EntryPoint : MonoBehaviour {
 
 			Transform winScreen = menuObject.transform.FindChild("GhostWinScreen");
 			winScreen.gameObject.SetActive(false);
-			
 			AppManager.Instance.ghostWinScreen = winScreen.gameObject;
 			
 			winScreen = menuObject.transform.FindChild("HumanWinScreen");
 			winScreen.gameObject.SetActive(false);
 			AppManager.Instance.humanWinScreen = winScreen.gameObject;
+			
+			winScreen = menuObject.transform.FindChild("LoadingBG");
+			winScreen.gameObject.SetActive(false);
+			AppManager.Instance.blackScreenFill = winScreen.gameObject;
 		}
 		SetupMultiplayer();
 	}

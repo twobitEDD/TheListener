@@ -6,8 +6,9 @@ public class AppManager : MonoBehaviour {
 	
 	public GUITexture welcomeScreenTexture;
 	
-	public GameObject ghostWinScreen;	
+	public GameObject ghostWinScreen;
 	public GameObject humanWinScreen;
+	public GameObject blackScreenFill;
 	
 	public bool activeGame = false;
 	
@@ -100,6 +101,11 @@ public class AppManager : MonoBehaviour {
 
 	public void BeginGameOver ()
 	{
+		activeGame = false;
+		blackScreenFill.SetActive(true);
+		GuiTextureAutoFade blackScreenFade = blackScreenFill.AddComponent<GuiTextureAutoFade>();
+		blackScreenFade.fadeDuration = 10.0f;
+		blackScreenFade.performFade();
 		Invoke ( "RollCredits0", 10.0f );
 	}
 	public void RollCredits0 ()
