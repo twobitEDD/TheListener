@@ -25646,7 +25646,6 @@ GameObject:
   - 4: {fileID: 1163296554}
   - 33: {fileID: 1163296556}
   - 23: {fileID: 1163296555}
-  - 64: {fileID: 1163296557}
   m_Layer: 0
   m_Name: chair
   m_TagString: Untagged
@@ -25661,7 +25660,7 @@ Transform:
   m_PrefabInternal: {fileID: 1324479013}
   m_GameObject: {fileID: 1163296553}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: .0292594675, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1673503388}
@@ -25691,19 +25690,6 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 1324479013}
   m_GameObject: {fileID: 1163296553}
-  m_Mesh: {fileID: 4300000, guid: d0861266250698447a0df6d6557c2fc6, type: 3}
---- !u!64 &1163296557
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1163296553}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: d0861266250698447a0df6d6557c2fc6, type: 3}
 --- !u!1 &1163327057
 GameObject:
@@ -29483,7 +29469,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d0861266250698447a0df6d6557c2fc6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: .564113021
+      value: .472466052
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: d0861266250698447a0df6d6557c2fc6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29544,6 +29530,18 @@ Prefab:
     - target: {fileID: 2300000, guid: d0861266250698447a0df6d6557c2fc6, type: 3}
       propertyPath: m_LightmapTilingOffset.w
       value: .91796875
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d0861266250698447a0df6d6557c2fc6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d0861266250698447a0df6d6557c2fc6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: .0292594675
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: d0861266250698447a0df6d6557c2fc6, type: 3}
+      propertyPath: m_Name
+      value: chair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0861266250698447a0df6d6557c2fc6, type: 3}
@@ -37023,7 +37021,7 @@ Transform:
   m_PrefabInternal: {fileID: 1324479013}
   m_GameObject: {fileID: 1673503387}
   m_LocalRotation: {x: 0, y: .456962436, z: 0, w: -.889486074}
-  m_LocalPosition: {x: .181966782, y: .564113021, z: 2.95291233}
+  m_LocalPosition: {x: .181966782, y: .472466052, z: 2.95291233}
   m_LocalScale: {x: 3.625772, y: 3.625772, z: 3.625772}
   m_Children:
   - {fileID: 1163296554}
