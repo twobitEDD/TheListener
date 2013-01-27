@@ -9,7 +9,7 @@ public class ApplicationManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		List<GameObject> collectableHostLocations = new List<GameObject>();
+		/*List<GameObject> collectableHostLocations = new List<GameObject>();
 		GameObject[] temp = GameObject.FindGameObjectsWithTag("CollectableHost");
 		collectableHostLocations.AddRange ( temp );
 		bool ghostKeySet = false;
@@ -28,7 +28,7 @@ public class ApplicationManager : MonoBehaviour {
 				ghostKeySet = true;
 			}
 
-		}
+		}*/
 	}
 	
 	// Update is called once per frame
