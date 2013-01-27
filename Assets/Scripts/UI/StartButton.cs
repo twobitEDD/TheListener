@@ -14,7 +14,10 @@ public class StartButton : MonoBehaviour {
 	public GUITexture humanWinScreen;
 	public GUITexture twoPlayerMouseover;
 	public GUITexture threePlayerMouseover;
+	public GUITexture loadingScreen;
 	public Texture mouseOverTexture;
+	public Texture twoPlayerInstructions;
+	public Texture threePlayerInstructions;
 	
 	// Use this for initialization
 	void Start () {
@@ -29,6 +32,16 @@ public class StartButton : MonoBehaviour {
 	
 	void OnMouseUp () {
     	print ("Start button clicked.");
+		
+		if (AppManager.Instance.playerCount == 2)
+		{
+			loadingScreen.guiTexture.texture = twoPlayerInstructions;
+		}
+		else
+		{
+			loadingScreen.guiTexture.texture = threePlayerInstructions;
+		}
+		
 		welcomeScreen.enabled = false;
 		welcomeScreenBottom.enabled = false;
 		welcomeScreenTop.enabled = false;

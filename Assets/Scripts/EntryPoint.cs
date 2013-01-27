@@ -9,6 +9,7 @@ public class EntryPoint : MonoBehaviour {
 	{
 		
 		Object load = Resources.Load("UI");
+		
        	if ( load )
        	{
 			GameObject menuObject = (GameObject)MonoBehaviour.Instantiate(load);

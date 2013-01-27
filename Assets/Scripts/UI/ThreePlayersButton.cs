@@ -19,9 +19,11 @@ public class ThreePlayersButton : MonoBehaviour {
     }
 	
 	void OnMouseUp () {
+		AppManager.Instance.DisplayMessage("3 player button clicked.");
     	print ("3 player button clicked.");
 		guiTextureToChange.texture = newGUITexture;
 		AppManager.Instance.playerCount = 3;
+		
 	}
 	
 	// Update is called once per frame

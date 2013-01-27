@@ -1,8 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GhostController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AppManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/GhostController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UI\StartButton.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GhostController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UI\QuitButton1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UI\TextFade.cs" Line="14" Column="10" />
+      <File FileName="Assets\Scripts\AppManager.cs" Line="40" Column="16" />
+      <File FileName="Assets\Scripts\Collectable.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Collector.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ApplicationManager.cs" Line="28" Column="6" />
+      <File FileName="Assets\Scripts\UI\ThreePlayersButton.cs" Line="20" Column="2" />
+      <File FileName="Assets\Scripts\EntryPoint.cs" Line="11" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

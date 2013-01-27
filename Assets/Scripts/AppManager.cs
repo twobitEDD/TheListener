@@ -18,7 +18,6 @@ public class AppManager : MonoBehaviour {
 			if (instance == null)
 			{
 				instance = new GameObject ("AppManager").AddComponent<AppManager> ();
-				
 			}
  
 			return instance;
@@ -28,6 +27,22 @@ public class AppManager : MonoBehaviour {
 	public void OnApplicationQuit ()
 	{
 		instance = null;
+	}
+	
+	public void DisplayMessage(string message)
+	{
+		Object load = Resources.Load("PickupInfo");
+		GameObject guiTextObj;
+		if ( load )
+       	{
+			guiTextObj = (GameObject)MonoBehaviour.Instantiate(load);
+			GUIText guiText = guiTextObj.GetComponent<GUIText>();
+			if( guiText)
+			{
+				guiText.text = message;
+			}
+
+		}
 	}
 	
 	// Use this for initialization
@@ -61,7 +76,7 @@ public class AppManager : MonoBehaviour {
 	}
 	
 	void OnGUI() {
-		//welcomeScreenTexture.enabled = true;        
+		//welcomeScreenTexture.enabled = true;
     }
 	
 	// Update is called once per frame
