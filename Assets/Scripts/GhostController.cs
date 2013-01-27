@@ -48,6 +48,7 @@ public class GhostController : MonoBehaviour {
 			
 			if( Input.GetButtonDown("A-1" ) )
 			{
+				audio.Play();
 				// This is so the ghost can intentionally prolong their visibility
 				Invoke("ResetLayerIndex", isVisibleWindow );
 				lastVisibleTimer = Time.realtimeSinceStartup;
