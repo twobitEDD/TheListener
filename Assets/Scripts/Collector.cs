@@ -64,7 +64,7 @@ public class Collector : MonoBehaviour {
 				other.audio.Play ();	
 			}
 			if ( other.itemType == Collectable.ItemType.GhostKey)
-			{
+			{				
 				AppManager.Instance.humanWinScreen.SetActive(true);
 				AppManager.Instance.BeginGameOver();
 			}
@@ -144,7 +144,6 @@ public class Collector : MonoBehaviour {
 			GhostController ghost = other.GetComponent<GhostController>();
 			if ( ghost )
 			{
-				
 				AppManager.Instance.ghostWinScreen.SetActive(true);
 				AppManager.Instance.BeginGameOver();
 			}
