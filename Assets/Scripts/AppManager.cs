@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public class AppManager : MonoBehaviour {
 	
-	public List<Collectable> collectableObjects;
 	public GUITexture welcomeScreenTexture;
 	
 	private static AppManager instance;
@@ -56,8 +55,13 @@ public class AppManager : MonoBehaviour {
 		List<GameObject> collectableHostLocations = new List<GameObject>();
 		GameObject[] temp = GameObject.FindGameObjectsWithTag("CollectableHost");
 		collectableHostLocations.AddRange ( temp );
+		
+		List<GameObject> collectables = new List<GameObject>();
+		GameObject[] temp2 = GameObject.FindGameObjectsWithTag("Collectables");
+		collectables.AddRange ( temp2 );
+		
 		bool ghostKeySet = false;
-		foreach ( Collectable collectableObj in collectableObjects )
+		foreach ( Collectable collectableObj in collectables )
 		{
 			int randIndex = Random.Range(0, collectableHostLocations.Count);
 			collectableObj.transform.parent = collectableHostLocations[randIndex].transform;
