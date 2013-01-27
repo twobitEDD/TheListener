@@ -16,6 +16,7 @@ public class ThirdPersonCamera : MonoBehaviour
 	
 	void Start(){
 		follow = GameObject.FindWithTag (targetTag).transform;	
+		AppManager.Instance.DisplayMessage("Hello?????");
 	}
 	
 	void LateUpdate ()

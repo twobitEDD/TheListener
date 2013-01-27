@@ -57,11 +57,11 @@ public class AppManager : MonoBehaviour {
 		collectableHostLocations.AddRange ( temp );
 		
 		List<GameObject> collectables = new List<GameObject>();
-		GameObject[] temp2 = GameObject.FindGameObjectsWithTag("Collectables");
+		GameObject[] temp2 = GameObject.FindGameObjectsWithTag("Collectable");
 		collectables.AddRange ( temp2 );
 		
 		bool ghostKeySet = false;
-		foreach ( Collectable collectableObj in collectables )
+		foreach ( GameObject collectableObj in collectables )
 		{
 			int randIndex = Random.Range(0, collectableHostLocations.Count);
 			collectableObj.transform.parent = collectableHostLocations[randIndex].transform;
@@ -72,7 +72,7 @@ public class AppManager : MonoBehaviour {
 			
 			if (!ghostKeySet)
 			{
-				collectableObj.itemType = Collectable.ItemType.GhostKey;	
+				collectableObj.GetComponent<Collectable>().itemType = Collectable.ItemType.GhostKey;	
 				ghostKeySet = true;
 			}
 

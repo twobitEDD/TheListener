@@ -44,6 +44,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Collectables\Record_player\Scripts\RecordPlayer.cs" />
      <Compile Include="Assets\Scripts\AppManager.cs" />
      <Compile Include="Assets\Scripts\ApplicationManager.cs" />
      <Compile Include="Assets\Scripts\Collectable.cs" />

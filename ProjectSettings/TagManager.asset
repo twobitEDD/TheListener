@@ -6,6 +6,7 @@ TagManager:
   - CollectableHost
   - Player0
   - Player1
+  - Collectable
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

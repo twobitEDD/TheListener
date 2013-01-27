@@ -10,8 +10,6 @@ public class StartButton : MonoBehaviour {
 	public GUITexture twoPlayersButton;
 	public GUITexture threePlayersButton;
 	public GUITexture quitButton;
-	public GUITexture ghostWinScreen;
-	public GUITexture humanWinScreen;
 	public GUITexture twoPlayerMouseover;
 	public GUITexture threePlayerMouseover;
 	public GUITexture loadingScreen;
@@ -50,8 +48,6 @@ public class StartButton : MonoBehaviour {
 		threePlayersButton.enabled = false;
 		twoPlayerMouseover.enabled = false;
 		threePlayerMouseover.enabled = false;
-		ghostWinScreen.enabled = false;
-		humanWinScreen.enabled = false;
 		
 		Application.LoadLevel (Application.loadedLevel + 1);
 	}
