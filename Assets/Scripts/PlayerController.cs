@@ -37,6 +37,15 @@ public class PlayerController : MonoBehaviour {
 	{
 		if ( !AppManager.Instance.activeGame )
 		{
+			if ( AppManager.Instance.humanWinScreen.activeSelf )
+			{
+				animator.SetBool("Celebrate", true );				
+			}
+			else if ( AppManager.Instance.ghostWinScreen.activeSelf )
+			{
+				animator.SetBool("Die", true );				
+			}
+			
 			return;
 		}
 
