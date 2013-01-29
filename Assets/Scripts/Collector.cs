@@ -64,6 +64,10 @@ public class Collector : MonoBehaviour {
 				AppManager.Instance.humanWinScreen.SetActive(true);
 				AppManager.Instance.BeginGameOver();
 			}
+			else
+			{
+				AppManager.Instance.DisplayMessage("This is just a " + other.name + ". I'll Keep Looking.");
+			}
 			collection.Add ( other );
 			other.Collected ();
 			if ( makeAttachPointParent )
@@ -137,19 +141,29 @@ public class Collector : MonoBehaviour {
 		}
 		else
 		{
-			GhostController ghost = other.GetComponent<GhostController>();
-			if ( ghost )
+			PlayerController ourPlayer = gameObject.GetComponent<PlayerController>();
+			if (ourPlayer )
 			{
-				if ( AppManager.Instance.playerCount == 2 || AppManager.Instance.deathCount > 0 ) 
+				if ( ourPlayer.dead )
 				{
-					AppManager.Instance.ghostWinScreen.SetActive(true);
-					gameObject.GetComponent<PlayerController>().dead = true;
-					AppManager.Instance.BeginGameOver();
+					return;
 				}
-				else
+				GhostController ghost = other.GetComponent<GhostController>();
+				if ( ghost )
 				{
-					gameObject.GetComponent<PlayerController>().dead = true;
-					++AppManager.Instance.deathCount;
+					if ( AppManager.Instance.playerCount == 2 || AppManager.Instance.deathCount > 0 ) 
+					{
+						AppManager.Instance.ghostWinScreen.SetActive(true);
+						ourPlayer.dead = true;
+						ourPlayer.audio.Play();
+						AppManager.Instance.BeginGameOver();
+					}
+					else
+					{
+						ourPlayer.dead = true;
+						ourPlayer.audio.Play();
+						++AppManager.Instance.deathCount;
+					}
 				}
 			}
 		}
@@ -159,6 +173,14 @@ public class Collector : MonoBehaviour {
 		Collectable collectObj = other.GetComponent<Collectable>();
 		if ( collectObj != null )
 		{
+			PlayerController ourPlayer = gameObject.GetComponent<PlayerController>();
+			if (ourPlayer )
+			{
+				if ( ourPlayer.dead )
+				{
+					return;
+				}
+			}
 			collectObj.StayCollectable();
 			
 			// automatically collect if autoPickup.

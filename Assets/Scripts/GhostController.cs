@@ -23,11 +23,13 @@ public class GhostController : MonoBehaviour {
 			ourGameObject = gameObject;
 		}
 		animator = ourGameObject.GetComponent<Animator>();
-		
-		lastVisibleTimer = Time.realtimeSinceStartup;
-		
+				
 		if(animator.layerCount >= 2)
 			animator.SetLayerWeight(1, 1);
+		
+		//Show the ghost on spawn.
+		// Which inits the last visible timer.
+		HandleGhostAttack();
 	}
 		
 	// Update is called once per frame
@@ -50,23 +52,29 @@ public class GhostController : MonoBehaviour {
 			
 			if( Input.GetButtonDown("A-1" ) && Time.realtimeSinceStartup - lastVisibleTimer > isVisibleWindow )
 			{
-				audio.Play();
-				// This is so the ghost can intentionally prolong their visibility
-				Invoke("ResetLayerIndex", isVisibleWindow );
-				lastVisibleTimer = Time.realtimeSinceStartup;
-
-				if ( gameObject.layer == renderLayerNoCamera )
-				{
-					SetLayerRecursively(gameObject, renderLayerMiniMap);
-				}
+				HandleGhostAttack();
 			}
 		}   		  
 	}
 	
+	void HandleGhostAttack ( )
+	{
+		audio.Play();
+
+		if ( gameObject.layer == renderLayerNoCamera )
+		{
+			SetLayerRecursively(gameObject, renderLayerMiniMap);
+
+			Invoke("ResetLayerIndex", isVisibleWindow );
+		
+			lastVisibleTimer = Time.realtimeSinceStartup;
+		}
+		
+
+	}
+	
 	void ResetLayerIndex ()
 	{
-	//NOT TRUE!	// Check to see if another ResetLayerIndex came in after this one's Invoke was popped.
-//		if ( Time.realtimeSinceStartup - lastVisibleTimer > isVisibleWindow ) 
 		{
 			if ( gameObject.layer == renderLayerMiniMap )
 			{

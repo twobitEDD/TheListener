@@ -64,6 +64,8 @@ public class AppManager : MonoBehaviour {
 	{
 		LoadCollectables();
 		activeGame = true;
+		deathCount = 0;
+
 	}
 	
 	void LoadCollectables()
@@ -116,27 +118,27 @@ public class AppManager : MonoBehaviour {
 		humanWinScreen.SetActive(false);
 		
 		DisplayMessage("Game Developers for Phantom Listener: ");
-		Invoke ( "RollCredits1", 5.0f );
+		Invoke ( "RollCredits1", 6.0f );
 	}
 	public void RollCredits1 ()
 	{
 		DisplayMessage("Matthew Z Haralovich(Zon): Tallest Person ");
-		Invoke ( "RollCredits2", 5.0f );
+		Invoke ( "RollCredits2", 6.0f );
 	}
 	public void RollCredits2 ()
 	{
 		DisplayMessage("Nick Johns(...): Preferences Not Found ");
-		Invoke ( "RollCredits3", 5.0f );
+		Invoke ( "RollCredits3", 6.0f );
 	}
 	public void RollCredits3 ()
 	{
 		DisplayMessage("Edd Norris(EDDnorris): #CoffeeChug ");
-		Invoke ( "RollCredits4", 5.0f );
+		Invoke ( "RollCredits4", 6.0f );
 	}
 	public void RollCredits4 ()
 	{
 		DisplayMessage("Gabe Recchia(Rudebrazen): !Greg ");
-		Invoke ( "RollCredits0", 5.0f );
+		Invoke ( "RollCredits0", 10.0f );
 	}
 	
 	void OnGUI() {
@@ -144,7 +146,16 @@ public class AppManager : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update () 
+	{
+		if ( blackScreenFill.activeSelf && Input.GetKey ( KeyCode.Escape ) )
+		{
+			Application.LoadLevel(0);
+			CancelInvoke ( "RollCredits0" );
+			CancelInvoke ( "RollCredits1" );
+			CancelInvoke ( "RollCredits2" );
+			CancelInvoke ( "RollCredits3" );
+			CancelInvoke ( "RollCredits4" );
+		}
 	}
 }
